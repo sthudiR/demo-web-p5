@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="800" height="500">
+  <defs><linearGradient id="g" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#16213a"/><stop offset="1" stop-color="#5a3a62"/></linearGradient></defs>
+  <rect width="800" height="500" fill="url(#g)"/>
+  <circle cx="650" cy="380" r="60" fill="#f2c9a0" opacity=".9"/>
+  <g fill="#f1ecff">
+    <path d="M200 210l26-8-20 18zM250 180l26-8-20 18zM300 220l26-8-20 18zM350 170l26-8-20 18zM400 205l26-8-20 18zM455 160l26-8-20 18zM505 195l26-8-20 18zM300 150l26-8-20 18zM240 250l26-8-20 18zM360 260l26-8-20 18zM440 240l26-8-20 18zM540 235l26-8-20 18z"/>
+  </g>
+  <text x="400" y="400" text-anchor="middle" font-family="system-ui,sans-serif" font-size="56" font-weight="700" fill="#e6edf3">Starling Sky</text>
+</svg>

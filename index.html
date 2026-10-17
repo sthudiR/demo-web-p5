@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Starling Sky</title>
+  <meta name="description" content="A flocking-birds animation built with p5.js. Tune the flock with sliders.">
+  <link rel="icon" href="thumbnail.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="tokens.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <div class="topbar">
+      <a class="hub-btn" href="https://sthudir.github.io/demo-web-hub/">&larr; Back to Hub</a>
+      <a class="gh-link" href="https://github.com/sthudiR/demo-web-p5" target="_blank" rel="noopener noreferrer" aria-label="View source on GitHub" title="View source on GitHub">
+        <svg viewBox="0 0 16 16" width="24" height="24" aria-hidden="true" fill="currentColor"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8Z"/></svg>
+      </a>
+    </div>
+    <h1>Starling Sky</h1>
+    <p class="muted">At dusk, thousands of starlings move as one cloud. Each bird follows three simple rules. Change them and watch the sky change.</p>
+  </header>
+  <main>
+    <section id="stage" aria-label="Flocking animation. Click or tap to scare the birds."></section>
+    <section class="controls" aria-label="Flock controls">
+      <label>Cohesion <span>(stay with the group)</span><input id="cohesion" type="range" min="0" max="2" step="0.05" value="0.9"></label>
+      <label>Alignment <span>(match neighbours' heading)</span><input id="alignment" type="range" min="0" max="2" step="0.05" value="1.1"></label>
+      <label>Separation <span>(don't bump)</span><input id="separation" type="range" min="0" max="3" step="0.05" value="1.4"></label>
+      <label>Birds <span id="count-out"></span><input id="count" type="range" min="20" max="500" step="10" value="220"></label>
+      <button id="pause" type="button">Pause</button>
+    </section>
+    <section>
+      <h2>The three rules</h2>
+      <ul>
+        <li><strong>Cohesion:</strong> steer toward the centre of nearby birds.</li>
+        <li><strong>Alignment:</strong> steer toward the average direction of nearby birds.</li>
+        <li><strong>Separation:</strong> steer away from birds that are too close.</li>
+      </ul>
+      <p>No bird is in charge. The swirling shapes come from every bird reacting only to its neighbours. Click the sky to make a gust that scatters them.</p>
+    </section>
+    <section>
+      <h2>Watch</h2>
+      <div class="video">
+        <iframe src="https://www.youtube-nocookie.com/embed/aqz-KE-bpKQ" title="Starling flocks video" loading="lazy"
+          allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      </div>
+    </section>
+  </main>
+  <footer><p class="muted">Built with p5.js. Plain HTML, CSS and JavaScript, no build step.</p></footer>
+  <script src="vendor/p5.min.js"></script>
+  <script src="sketch.js"></script>
+</body>
+</html>
