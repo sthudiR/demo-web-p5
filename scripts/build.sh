@@ -4,5 +4,5 @@ set -euo pipefail
 cd "$(dirname "$0")/.."
 rm -rf dist
 mkdir -p dist
-cp -r index.html style.css tokens.css sketch.js vendor site.json thumbnail.svg dist/
+cp -r index.html style.css tokens.css sketch.js vendor site.json thumbnail.svg preview.webm preview.mp4 dist/
 touch dist/.nojekyll

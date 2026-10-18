@@ -3,7 +3,23 @@
   "title": "Starling Sky",
   "blurb": "Hundreds of birds flock at dusk. Tune how they cling together, line up and keep their distance, and click to scare them.",
   "framework": "p5.js (plain JavaScript)",
-  "tags": ["javascript", "animation", "canvas", "interactive"],
+  "tags": [
+    "javascript",
+    "animation",
+    "canvas",
+    "interactive"
+  ],
   "url": "https://sthudir.github.io/demo-web-p5/",
-  "thumbnail": "thumbnail.svg"
+  "thumbnail": "thumbnail.svg",
+  "kind": "piece",
+  "preview": "preview",
+  "metrics": {
+    "size": "1.1 MB",
+    "ready": "1 s",
+    "writes": "JavaScript",
+    "build": "7 s",
+    "lines": 165
+  },
+  "goodFor": "Animations and visuals you can drag and tweak, with no build step.",
+  "notFor": "Page structure: p5 draws, so you build the pages around it."
 }
