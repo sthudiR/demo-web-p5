@@ -26,4 +26,4 @@ Replace the YouTube id in the `<iframe>` in `index.html` (`youtube-nocookie.com/
 All asset URLs are relative (`vendor/p5.min.js`, `style.css`), so the site works under `/demo-web-p5/` with no configuration.
 
 ## Credits
-p5.js is licensed LGPL-2.1; see `vendor/p5-LICENSE.txt`.
+This demo is public domain (CC0), free to use and share. The bundled p5.js keeps its own licence: see `vendor/p5-LICENSE.txt`.
