@@ -19,3 +19,9 @@ button{align-self:end;background:var(--dw-accent);color:#0b0f14;border:0;border-
 .video{position:relative;aspect-ratio:16/9;border-radius:var(--dw-radius);overflow:hidden;background:#000}
 .video iframe{position:absolute;inset:0;width:100%;height:100%;border:0}
 footer{padding-top:24px;padding-bottom:40px}
+.try{margin:6px 0 0;padding:8px 12px;background:var(--dw-card);border:1px solid var(--dw-border);border-left:3px solid var(--dw-accent);border-radius:8px}
+.behind{background:var(--dw-card);border:1px solid var(--dw-border);border-radius:var(--dw-radius);padding:10px 16px}
+.behind summary{cursor:pointer;font-weight:600}
+.behind dl{display:grid;grid-template-columns:max-content 1fr;gap:6px 16px;margin:12px 0 4px}
+.behind dt{color:var(--dw-muted)}.behind dd{margin:0}
+.small{font-size:.8rem}
