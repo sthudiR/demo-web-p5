@@ -14,11 +14,11 @@
   "kind": "piece",
   "preview": "preview",
   "metrics": {
-    "size": "1.1 MB",
-    "ready": "1 s",
+    "size": "266 KB",
+    "ready": "0.9 s",
     "writes": "JavaScript",
     "build": "7 s",
-    "lines": 165
+    "lines": 187
   },
   "goodFor": "Animations and visuals you can drag and tweak, with no build step.",
   "notFor": "Page structure: p5 draws, so you build the pages around it."
